@@ -1,11 +1,59 @@
+/**** generelt ***/
 body {
-  margin-inline: 10rem;
+  margin-inline: 8rem;
 }
+
+header {
+  margin-inline: 2rem;
+}
+
+main {
+  margin-inline: 2rem;
+  padding-inline: 6rem;
+  border: black solid 2px;
+}
+
+/*** knapper i header ***/
+button {
+  background-color: black;
+  padding-block: 0.5rem;
+  border: none;
+  width: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  cursor: pointer;
+  margin-block: 1rem;
+}
+
+body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(3),
+body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(2),
+body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(1) {
+  color: white;
+}
+
+/*** hero unit ***/
+/*** intro tekst ***/
+.pil_gird {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pil {
+  grid-column: 2/3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*** 3 billeder af typografi ***/
+/*** tekst boks ***/
+/*** 2 billeder ***/
+/*** boks med skrift og 2 billeder ***/
 
 /*** footer ***/
 .footer_boks {
   background-color: black;
   padding: 2rem;
+  margin: 2rem;
 }
 
 .footer_boks p {

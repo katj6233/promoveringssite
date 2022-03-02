@@ -1,0 +1,14 @@
+body {
+  margin-inline: 10rem;
+}
+
+/*** footer ***/
+.footer_boks {
+  background-color: black;
+  padding: 2rem;
+}
+
+.footer_boks p {
+  color: white;
+  text-align: center;
+}

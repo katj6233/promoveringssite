@@ -1,39 +1,113 @@
-/**** generelt ***/
+@font-face {
+  font-family: "manrope";
+  src: url("manrope-variablefont_wght-webfont.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "overpass";
+  src: url("overpass-variablefont_wght-webfont.woff2") format("woff2");
+}
+
+h1 {
+  color: #f15a24;
+  font-family: "overpass";
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+
+h2 {
+  color: #9c482a;
+  font-family: "overpass";
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-family: "overpass";
+  font-size: 1rem;
+}
+
+p {
+  font-family: "manrope";
+  line-height: 1.7rem;
+  font-size: 0.9rem;
+}
+
+a {
+  font-family: "overpass";
+}
+
+/*** generelt ***/
+* {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 body {
-  margin-inline: 8rem;
+  margin-inline: 1rem;
 }
 
 header {
-  margin-inline: 2rem;
+  margin-block: 2rem;
 }
 
 main {
-  margin-inline: 2rem;
-  padding-inline: 6rem;
+  margin-inline: 1rem;
+  padding-inline: 1rem;
   border: black solid 2px;
 }
 
 /*** knapper i header ***/
-button {
-  background-color: black;
-  padding-block: 0.5rem;
-  border: none;
-  width: 80px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  text-align: center;
-  cursor: pointer;
-  margin-block: 1rem;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+  margin-left: -1.5rem;
 }
 
-body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(3),
-body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(2),
-body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(1) {
+li a {
+  background-color: black;
   color: white;
+  text-decoration: none;
+  padding-inline: 0.95rem;
+  padding-block: 0.3rem;
 }
 
 /*** hero unit ***/
+.hero_billede {
+  margin-top: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+}
+
+.typografi_prikker {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.prik {
+  width: 0.5rem;
+}
+
 /*** intro tekst ***/
-.pil_gird {
+.intro_tekst {
+  background-color: rgb(241, 230, 200, 0.7);
+  margin-top: 2rem;
+}
+
+.intro_tekst p {
+  padding-inline: 1rem;
+  padding-top: 1rem;
+}
+
+.pil_grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -43,20 +117,271 @@ body > header:nth-child(1) > nav:nth-child(1) > button:nth-child(1) {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 2rem;
+  padding-bottom: 1rem;
 }
+
+.pulse {
+  animation-name: pulse_kf;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes pulse_kf {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
 /*** 3 billeder af typografi ***/
+.tre_billeder {
+  margin: 1rem;
+  padding-top: 4rem;
+}
+
+.andet_billede {
+  margin-block: 1rem;
+}
 /*** tekst boks ***/
+.tekst_boks h1 {
+  padding-top: 4rem;
+}
+
 /*** 2 billeder ***/
+.to_billeder {
+  margin-block: 4rem;
+}
+
 /*** boks med skrift og 2 billeder ***/
+.boks_skrift_billeder {
+  background-color: rgb(241, 230, 200, 0.7);
+  margin-bottom: 4rem;
+}
+
+.boks_skrift_billeder_omslutter_alt {
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
 
 /*** footer ***/
 .footer_boks {
   background-color: black;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .footer_boks p {
   color: white;
   text-align: center;
+}
+
+/*** LILLE TABLET ***/
+@media (min-width: 640px) {
+  /**** generelt ***/
+  header {
+    margin-inline: 1rem;
+  }
+
+  main {
+    margin-inline: 2rem;
+    padding-inline: 2rem;
+  }
+
+  /*** hero unit ***/
+  .hero_billede {
+    margin-top: 3rem;
+    width: 25rem;
+  }
+
+  /*** footer ***/
+  .footer_boks {
+    margin: 2rem;
+  }
+}
+
+/*** TABLET ***/
+@media (min-width: 768px) {
+  /*** hero unit ***/
+  .hero_billede {
+    margin-top: 3rem;
+    width: 30rem;
+  }
+
+  /*** knapper i header ***/
+  li a {
+    padding-inline: 1.5rem;
+    padding-block: 0.7rem;
+  }
+
+  li a:hover {
+    background-color: #f15a24;
+    color: black;
+  }
+
+  /*** intro tekst ***/
+  .intro_tekst p {
+    padding-inline: 3rem;
+    padding-top: 2rem;
+  }
+
+  /*** 3 billeder af typografi ***/
+  .tre_billeder {
+    display: flex;
+    margin: 0rem;
+  }
+
+  .andet_billede {
+    margin-inline: 1rem;
+    margin-block: 0rem;
+  }
+
+  /*** tekst boks ***/
+  .to_paragrafer {
+    display: flex;
+    gap: 2rem;
+  }
+
+  /*** 2 billeder ***/
+  .to_billeder {
+    display: flex;
+  }
+
+  .fjerde_billede {
+    margin-right: 2rem;
+  }
+
+  /*** boks med skrift og 2 billeder ***/
+  .boks_skrift_billeder_omslutter_alt {
+    padding-inline: 3rem;
+    padding-top: 2rem;
+  }
+
+  .sjette_syvende_billede_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-bottom: 1rem;
+  }
+
+  .sjette_billede {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 1rem;
+  }
+
+  .syvende_billede {
+    grid-column: 3/5;
+    grid-row: 2/3;
+    margin-top: 1rem;
+  }
+}
+
+/*** LILLE DEKSTOP ***/
+@media (min-width: 1024px) {
+  /**** generelt ***/
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    line-height: 2rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    line-height: 1.8rem;
+    font-size: 1rem;
+  }
+
+  main {
+    margin-inline: 2rem;
+    padding-inline: 4rem;
+  }
+
+  /*** knapper i header ***/
+  nav ul {
+    gap: 0.5rem;
+    margin-left: -1.5rem;
+  }
+
+  /*** hero unit ***/
+  .hero_billede {
+    width: 40rem;
+  }
+
+  /*** intro tekst ***/
+  /*** 3 billeder af typografi ***/
+  .andet_billede {
+    margin-inline: 2rem;
+  }
+  /*** tekst boks ***/
+  /*** 2 billeder ***/
+  .fjerde_billede {
+    margin-right: 4rem;
+  }
+  /*** boks med skrift og 2 billeder ***/
+  /*** footer ***/
+}
+
+/*** STOR DESKTOP ***/
+@media (min-width: 1280px) {
+  /**** generelt ***/
+  main {
+    margin-inline: 2rem;
+    padding-inline: 5rem;
+  }
+
+  /*** hero unit ***/
+  .hero_billede {
+    margin-top: 5rem;
+    width: 50rem;
+  }
+
+  /*** 2 billeder ***/
+  .fjerde_billede {
+    margin-right: 6rem;
+  }
+  /*** boks med skrift og 2 billeder ***/
+  .boks_skrift_billeder_omslutter_alt {
+    padding-inline: 6rem;
+    padding-top: 4rem;
+  }
+
+  .sjette_syvende_billede_div {
+    padding-bottom: 3rem;
+  }
+
+  .sjette_billede {
+    margin-top: 2rem;
+  }
+}
+
+/*** EKSTRASTOR DESKTOP ***/
+@media (min-width: 1536px) {
+  /**** generelt ***/
+  body {
+    margin-inline: 4rem;
+  }
+
+  main {
+    margin-inline: 2rem;
+    padding-inline: 8rem;
+  }
+
+  /*** hero unit ***/
+  /*** intro tekst ***/
+  /*** 3 billeder af typografi ***/
+  /*** tekst boks ***/
+  /*** 2 billeder ***/
+  /*** boks med skrift og 2 billeder ***/
+  /*** footer ***/
 }

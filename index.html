@@ -8,23 +8,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- body - har en margin på 10rem -->
+  <!-- body - har en margin på 1rem i mobile - har en margin på 10rem -->
   <body>
     <!-- header -->
     <header>
       <nav>
-        <button a href="0#">section</a></button>
-        <button a href="0#">section</a></button>
-        <button a href="0#">section</a></button>
+        <ul>
+          <li><a href="index.html#tre_billeder">Video</a></li>
+          <li><a href="index.html#uddybbende_tekst">Om typografien</a></li>
+          <li><a href="index.html#to_billeder">Plakter</a></li>
+          <li><a href="index.html#sidste_sektion">Tekst</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- main -->
     <main>
       <!-- hero uni -->
-      <section></section>
-      <!-- intro tekst -->
       <section>
+        <img
+          class="hero_billede"
+          src="img/herro.svg"
+          alt="billede af et bogstav"
+        />
+        <div class="typografi_prikker">
+          <img class="prik" src="img/FadArmrecording.svg" alt="prik" />
+          <h3>Typografi made by Katja Levring</h3>
+          <img class="prik" src="img/FadArmrecording.svg" alt="prik" />
+        </div>
+      </section>
+
+      <!-- intro tekst -->
+      <section class="intro_tekst">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
           pharetra est eleifend, pharetra tortor at, lobortis nibh. Morbi quis
@@ -34,18 +49,108 @@
           pellentesque ullamcorper. Ut sit amet dui nibh. Quisque sagittis
           lacinia erat, vel dictum ligula tincidunt quis.
         </p>
-        <div class="pil_gird">
-            <img class="pil" src="img/EpArrowDown.svg" alt="pil">
+        <div class="pil_grid">
+          <a class="pil pulse" href="index.html#tre_billeder">
+            <img src="img/EpArrowDown.svg" alt="pil"
+          /></a>
         </div>
       </section>
+
       <!-- 3 billeder af typografi -->
-      <section></section>
+      <section class="tre_billeder" id="tre_billeder">
+        <img
+          class="foerste_billede"
+          src="img/e.png"
+          alt="billede af et bogstav"
+        />
+        <img
+          class="andet_billede"
+          src="img/e.png"
+          alt="billede af et bogstav"
+        />
+        <img
+          class="tredje_billede"
+          src="img/e.png"
+          alt="billede af et bogstav"
+        />
+      </section>
+
       <!-- tekst boks -->
-      <section></section>
+      <section class="tekst_boks" id="uddybbende_tekst">
+        <h1>"EN KANT" lavet af Katja Levring</h1>
+        <h2>
+          En detaljeret Display Font hvor de enkelte bogstaver skal stå for sig,
+          som ved klassiske initialer. Med store kontraster og cyberpunk
+          inspirerende ornamenter.
+        </h2>
+        <div class="to_paragrafer">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pharetra est eleifend, pharetra tortor at, lobortis nibh. Morbi quis
+            nisi ut enim vehicula hendrerit vitae non nisi. Cras tellus arcu,
+            vehicula a rhoncus a, sit amet eros. Nulla facilisi. Duis semper id
+            enim tempus hendrerit. Mauris tempus diam sit amet pellentesque
+            ullamcorper. Ut sit amet dui nibh. Quisque sagittis lacinia erat,
+            vel dictum ligula tincidunt quis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pharetra est eleifend, pharetra tortor at, lobortis nibh. Morbi quis
+            nisi ut enim vehicula hendrerit vitae non nisi. Cras tellus arcu,
+            vehicula a rhoncus a, sit amet eros. Nulla facilisi. Duis semper id
+            enim tempus hendrerit. Mauris tempus diam sit amet pellentesque
+            ullamcorper. Ut sit amet dui nibh. Quisque sagittis lacinia erat,
+            vel dictum ligula tincidunt quis.
+          </p>
+        </div>
+      </section>
+
       <!-- 2 billeder -->
-      <section></section>
+      <section class="to_billeder" id="to_billeder">
+        <img
+          class="fjerde_billede"
+          src="img/e.png"
+          alt="billede af et bogstav"
+        />
+        <img
+          class="femte_billede"
+          src="img/e.png"
+          alt="billede af et bogstav"
+        />
+      </section>
+
       <!-- boks med skrift og 2 billeder -->
-      <section></section>
+      <section class="boks_skrift_billeder" id="sidste_sektion">
+        <div class="boks_skrift_billeder_omslutter_alt">
+          <h1>"EN KANT" lavet af Katja Levring</h1>
+          <h2>
+            En detaljeret Display Font hvor de enkelte bogstaver skal stå for
+            sig, som ved klassiske initialer. Med store kontraster og cyberpunk
+            inspirerende ornamenter.
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            pharetra est eleifend, pharetra tortor at, lobortis nibh. Morbi quis
+            nisi ut enim vehicula hendrerit vitae non nisi. Cras tellus arcu,
+            vehicula a rhoncus a, dignissim sit amet eros. Nulla facilisi. Duis
+            semper id enim tempus hendrerit. Mauris tempus diam sit amet
+            pellentesque ullamcorper. Ut sit amet dui nibh. Quisque sagittis
+            lacinia erat, vel dictum ligula tincidunt quis.
+          </p>
+          <div class="sjette_syvende_billede_div">
+            <img
+              class="sjette_billede"
+              src="img/e.png"
+              alt="billede af et bogstav"
+            />
+            <img
+              class="syvende_billede"
+              src="img/e.png"
+              alt="billede af et bogstav"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- footer -->

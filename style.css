@@ -1,11 +1,12 @@
+/*** fonte ***/
 @font-face {
   font-family: "manrope";
-  src: url("manrope-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("font/manrope-variablefont_wght-webfont.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "overpass";
-  src: url("overpass-variablefont_wght-webfont.woff2") format("woff2");
+  src: url("font/overpass-variablefont_wght-webfont.woff2") format("woff2");
 }
 
 h1 {
@@ -42,7 +43,8 @@ a {
   scroll-behavior: smooth;
 }
 
-img {
+img,
+video {
   width: 100%;
   height: auto;
 }

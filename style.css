@@ -141,7 +141,7 @@ li a {
   }
 }
 
-/*** 3 billeder af typografi ***/
+/*** 3 gifs af typografi ***/
 .tre_billeder {
   margin: 1rem;
   padding-top: 4rem;
@@ -232,7 +232,7 @@ li a {
     padding-top: 2rem;
   }
 
-  /*** 3 billeder af typografi ***/
+  /*** 3 gifs af typografi ***/
   .tre_billeder {
     display: flex;
     margin: 0rem;
@@ -320,18 +320,15 @@ li a {
     width: 40rem;
   }
 
-  /*** intro tekst ***/
-  /*** 3 billeder af typografi ***/
+  /*** 3 gifs af typografi ***/
   .andet_billede {
     margin-inline: 2rem;
   }
-  /*** tekst boks ***/
+
   /*** 2 billeder ***/
   .fjerde_billede {
     margin-right: 4rem;
   }
-  /*** boks med skrift og 2 billeder ***/
-  /*** footer ***/
 }
 
 /*** STOR DESKTOP ***/
@@ -378,12 +375,4 @@ li a {
     margin-inline: 2rem;
     padding-inline: 8rem;
   }
-
-  /*** hero unit ***/
-  /*** intro tekst ***/
-  /*** 3 billeder af typografi ***/
-  /*** tekst boks ***/
-  /*** 2 billeder ***/
-  /*** boks med skrift og 2 billeder ***/
-  /*** footer ***/
 }
